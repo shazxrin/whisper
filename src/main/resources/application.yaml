@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/whisper
+    username: postgres
+    password: password
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.yaml
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+server:
+  error:
+    include-stacktrace: never
+    include-message: always
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "health"
+          - "metrics"
+whisper:
+  notification-queue-name: notification
+  telegram-bot-token: TELEGRAM_BOT_TOKEN
+  telegram-username: TELEGRAM_USERNAME
