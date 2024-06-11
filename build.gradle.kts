@@ -47,9 +47,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0")
 
-    compileOnly("org.projectlombok:lombok")
-    annotationProcessor("org.projectlombok:lombok")
-
     implementation("org.telegram:telegrambots-springboot-longpolling-starter:7.4.0")
     implementation("org.telegram:telegrambots-client:7.4.0")
 

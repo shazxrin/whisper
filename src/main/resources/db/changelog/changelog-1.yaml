@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1718086583642-1
+      author: Shazrin
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_telegram_info
+                  name: id
+                  type: VARCHAR(255)
+              - column:
+                  name: chat_id
+                  type: BIGINT
+            tableName: telegram_info
+

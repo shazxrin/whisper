@@ -1,4 +1,4 @@
-package me.shazxrin.whisper.telegram;
+package me.shazxrin.whisper.push.telegram;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
